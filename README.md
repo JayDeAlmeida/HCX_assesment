@@ -1,18 +1,52 @@
 # HCX_assesment
 Here lies my solutions for the given challenge.
 
-To start you need to use the command git clone followed by the repository url on the terminal to import the full repository.
+## Used Technologies
+- **Cypress**: Web applications test framework, popular for it's intuitive usage, versatility and test execution UI;
+- **Cucumber**: Traditional BDD testing tool that has Gherkin as base;
+- **JavaScript**: Coding language chosen for this assessment, very popular for UI automated tests using Cypress.
 
-Then, still on the terminal, run npm install cypress.
+## Getting Started
+Be sure to install:
+- **Node.js**;
+- **npm**;
+- An IDE of your choice (for example **Visual Studio Code** or **WebStorm**).
 
-Be sure to install the Cucumber extension available on your IDE extensions library.
+## Setting the Environment
+1. **Using your IDE terminal, use git commands to clone this repository:**
+  ```bash
+ git clone https://github.com/JayDeAlmeida/HCX_assesment
+  ```
 
-You can run the tests in two ways:
-If your machine is strong, you can run npx cypress open. This command will open Cypress' interface and you will be able to see the automation working (opening pages and clicking...). Be aware, this run consumes a lot of ram memory. Don't recommend to run it on a 6Gb ram lower machine, specially with other programs opened (yes, your browser with multiple oppened tabs counts).
+2.  **Navigate to the project's directory:**
+   ```bash
+   cd HCX_assesment
+  ```
 
-If your machine is not built to run codes, you can run each test by clickin on the green arrow available on the side of each scenario. Or just type npx cypress run on your terminal. This command will make Cypress run all the tests from the file without opening it's visual interface.
+3. **Install needed dependencies:**
+  ```bash
+  npm install
+  ```
 
-For information:
-Login information for Swag Labs' e-commerce testing site
-user name: standard_user
-password: secret_sauce
+
+## Test Execution
+1. **Using Cypress UI**
+  In order to open Cypress' UI run the following command:
+  ```bash
+  npx cypress open
+  ```
+
+2. **Running tests on terminal**
+   If you don't want to run Cypress' UI, you can run the test and see the logs and results on your terminal by running the following         command:
+ ```bash
+ npx cypress run
+ ```
+
+## API Tests Reports
+In order to have a call history for the API automated test, a report file was created. All the runs results are automatically storaged within the file:
+```bash
+trello_api_report.json
+```
+
+
+**Author: Hilda Jade Almeida**
