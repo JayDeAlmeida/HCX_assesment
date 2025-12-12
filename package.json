@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@cucumber/cucumber": "^12.3.0",
+    "esbuild": "^0.27.1"
+  },
+"cypress-cucumber-preprocessor": {
+    "stepDefinitions": "/workspaces/HCX_assesment/e-shop automated testing/step_definitions/loginStepDefinitions.js",
+    "json": {
+      "enabled": true,
+      "output": "/workspaces/HCX_assesment/e-shop automated testing/cucumber_reports/cucumber-report.json"
+    },
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^15.7.1"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:api": "cypress run --spec 'e-shop automated testing/api_tests/**/*.feature'"
+  }
+}
